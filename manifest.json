@@ -1,0 +1,45 @@
+{
+    "name": "OlxStats",
+    "description": "Browser add-on used for better presentation of the statistics of the OLX classifieds service",
+    "author": "Nikodem Reszka",
+    "version": "1.1.2",
+    "manifest_version": 2,
+    "icons":{
+        "16": "./icons/icon-16.png",
+        "32": "./icons/icon-32.png",
+        "48": "./icons/icon-48.png",
+        "128": "./icons/icon-128.png"
+    },
+    "content_scripts": [
+        {
+	    "js": ["content.js"],
+            "matches": [
+                "https://www.olx.pl/oferty/",
+                "https://www.olx.pl/oferty/*",
+                "https://www.olx.pl/motoryzacja/",
+                "https://www.olx.pl/motoryzacja/*",
+                "https://www.olx.pl/slub-i-wesele/",
+                "https://www.olx.pl/slub-i-wesele/*",
+                "https://www.olx.pl/muzyka-edukacja/",
+                "https://www.olx.pl/muzyka-edukacja/*",
+                "https://www.olx.pl/sport-hobby/",
+                "https://www.olx.pl/sport-hobby/*",
+                "https://www.olx.pl/dla-dzieci/",
+                "https://www.olx.pl/dla-dzieci/*",
+                "https://www.olx.pl/zwierzeta/",
+                "https://www.olx.pl/zwierzeta/*",
+                "https://www.olx.pl/rolnictwo/",
+                "https://www.olx.pl/rolnictwo/*",
+                "https://www.olx.pl/moda/",
+                "https://www.olx.pl/moda/*",
+                "https://www.olx.pl/elektronika/",
+                "https://www.olx.pl/elektronika/*",
+                "https://www.olx.pl/dom-ogrod/",
+                "https://www.olx.pl/dom-ogrod/*",
+                "https://www.olx.pl/nieruchomosci/",
+                "https://www.olx.pl/nieruchomosci/*",
+                "https://www.olx.pl/uslugi-firmy/",
+                "https://www.olx.pl/uslugi-firmy/*"
+            ]
+        }]
+}
